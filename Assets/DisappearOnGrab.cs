@@ -5,6 +5,7 @@ using System.Collections;
 public class DisappearOnGrab : MonoBehaviour
 {
     public float delay = 3f;
+    public AudioSource audioSource;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
@@ -29,5 +30,13 @@ public class DisappearOnGrab : MonoBehaviour
     void OnDestroy()
     {
         grabInteractable.selectEntered.RemoveListener(OnGrab);
+    }
+
+    public void PlayAudio()
+    {
+        if (audioSource != null)
+        {
+            audioSource.PlayDelayed(delay);
+        }
     }
 }

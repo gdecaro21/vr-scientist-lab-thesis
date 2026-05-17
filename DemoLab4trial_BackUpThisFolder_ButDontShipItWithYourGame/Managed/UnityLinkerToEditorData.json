@@ -143,6 +143,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.director"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -772,6 +778,12 @@
             "icon": "package/com.unity.modules.vr"
           },
           {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
+          },
+          {
             "name": "Required by XR Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1043,7 +1055,9 @@
           },
           {
             "name": "CapsuleCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/DemoLab4.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1393,6 +1407,12 @@
             "icon": "package/com.unity.modules.vr"
           },
           {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
+          },
+          {
             "name": "Required by XR Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1638,6 +1658,12 @@
             "icon": "package/com.unity.modules.vr"
           },
           {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
+          },
+          {
             "name": "Required by XR Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1682,6 +1708,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.unitywebrequest"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -1815,6 +1847,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.uielements"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -1935,6 +1973,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.unityanalytics"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -1976,6 +2020,27 @@
       {
         "name": "VR",
         "dependencies": []
+      },
+      {
+        "name": "Video",
+        "dependencies": [
+          {
+            "name": "VideoClip",
+            "scenes": [
+              "Assets/DemoLab4.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "VideoPlayer",
+            "scenes": [
+              "Assets/DemoLab4.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
       },
       {
         "name": "XR",
